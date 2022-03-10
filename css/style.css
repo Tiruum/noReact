@@ -142,10 +142,6 @@ a, a:hover, a:focus {
     border-color: #0160A2;
 }
 
-::-webkit-scrollbar {
-  width: .9em;
-  margin-right: 10px;
-}
 .display-7 {
     font-size: 2.0rem;
     font-weight: 300;
@@ -166,6 +162,11 @@ div[data-src="common"].cover {
 }
 
 /* Track */
+::-webkit-scrollbar {
+    width: .9em;
+    margin-right: 10px;
+}
+
 ::-webkit-scrollbar-track {
   /* box-shadow: inset 0 0 2px grey; */
   border-radius: 0em;
@@ -177,6 +178,26 @@ div[data-src="common"].cover {
   background: #0160A2;
   border-radius: .5em;
   border: .15em solid #003a62;
+}
+
+/* For div x-scrolls */
+/* Track */
+div ::-webkit-scrollbar {
+    height: .6em;
+    margin-right: 0;
+}
+
+div ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 2px grey; */
+    border-radius: 0em;
+    background: transparent;
+}
+
+/* Handle */
+div ::-webkit-scrollbar-thumb {
+    background: #0160A2;
+    border-radius: .5em;
+    border: 0px solid #fff;
 }
 
 #main-container {
